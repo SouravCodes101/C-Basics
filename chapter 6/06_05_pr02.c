@@ -1,16 +1,18 @@
 #include<stdio.h>
 
-void address(int j);
+void printAddress(int a);
 
 int main()
 {
-    int i = 5;
-    printf("The value of variable i is %d \n", i);
-    address(i);
-    printf("The address of variable i is %u \n", &i);
+    int i = 10;
+    printf("The value of i is %d \n", i);
+    printAddress(i);
+    printf("The address of i is %u \n", &i);
+    
+
     return 0;
 }
 
-void address(int j) {
-    printf("The address of variable j is %u \n", &j);
+void printAddress(int a) {
+    printf("The address of a is %u \n", &a);
 }

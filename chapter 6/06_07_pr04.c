@@ -4,13 +4,13 @@ void sumAndAvg(int a, int b, int *sum, float *avg);
 
 int main()
 {
-    int i, j, sum;
+    int a, b, sum;
     float avg;
-    i = 3;
-    j = 6;
-    sumAndAvg(i ,j, &sum, &avg);
-    printf("The value of sum is %d \n", sum);
-    printf("The value of average is %.2f \n", avg);
+    printf("Enter two numbers \n");
+    scanf("%d %d", &a, &b);
+    sumAndAvg(a,b,&sum,&avg);
+    printf("The sum of %d and %d is %d\n",a, b, sum);
+    printf("The average of %d and %d is %.2f\n",a, b, avg);
 
     return 0;
 }
@@ -18,4 +18,5 @@ int main()
 void sumAndAvg(int a, int b, int *sum, float *avg) {
     *sum = a + b;
     *avg = (float)(*sum)/2;
+   
 }

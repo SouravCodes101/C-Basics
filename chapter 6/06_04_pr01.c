@@ -2,10 +2,11 @@
 
 int main()
 {
-    int a = 10;
+    int a = 4;
     int *ptr = &a;
-    printf("The address of a is %u\n", ptr);
-    printf("The value of a is %d\n", *ptr);
+
+    printf("The value of a is %d \n", a);
+    printf("The address of a = %u is %u \n", *ptr, ptr);
     
     return 0;
 }
